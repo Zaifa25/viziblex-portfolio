@@ -1,0 +1,9 @@
+{
+  "short_name": "Viziblex",
+  "name": "Viziblex | All-in-One Digital Solutions",
+  "icons": [],
+  "start_url": ".",
+  "display": "standalone",
+  "theme_color": "#1F3A5F",
+  "background_color": "#0D1B2E"
+}

@@ -1,0 +1,337 @@
+/* =============================================
+   SERVICES SECTION
+   ============================================= */
+
+.services-section {
+  background: var(--dark);
+}
+
+.services-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 20px;
+}
+
+.service-card {
+  background: rgba(31, 58, 95, 0.12);
+  border: 1px solid rgba(198, 166, 100, 0.1);
+  border-radius: 16px;
+  padding: 28px 24px;
+  transition: var(--transition);
+  position: relative;
+  overflow: hidden;
+}
+
+.service-card::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  height: 2px;
+  background: linear-gradient(90deg, transparent, var(--gold), transparent);
+  transform: scaleX(0);
+  transition: transform 0.4s ease;
+}
+
+.service-card:hover {
+  border-color: rgba(198, 166, 100, 0.35);
+  background: rgba(31, 58, 95, 0.25);
+  transform: translateY(-6px);
+  box-shadow: 0 20px 50px rgba(0, 0, 0, 0.4);
+}
+
+.service-card:hover::before {
+  transform: scaleX(1);
+}
+
+.service-icon {
+  width: 52px;
+  height: 52px;
+  border-radius: 12px;
+  background: linear-gradient(135deg, rgba(198, 166, 100, 0.15), rgba(198, 166, 100, 0.05));
+  border: 1px solid rgba(198, 166, 100, 0.2);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 1.3rem;
+  color: var(--gold);
+  margin-bottom: 18px;
+  transition: var(--transition);
+}
+
+.service-card:hover .service-icon {
+  background: linear-gradient(135deg, rgba(198, 166, 100, 0.25), rgba(198, 166, 100, 0.1));
+  transform: scale(1.1);
+}
+
+.service-title {
+  font-family: var(--font-heading);
+  font-size: 1.15rem;
+  font-weight: 600;
+  color: var(--warm-white);
+  margin-bottom: 10px;
+}
+
+.service-desc {
+  font-family: var(--font-body);
+  font-size: 0.85rem;
+  color: var(--text-muted);
+  line-height: 1.6;
+  margin: 0;
+}
+
+/* =============================================
+   TECH STACK SECTION
+   ============================================= */
+
+.techstack-section {
+  background: linear-gradient(180deg, var(--dark) 0%, var(--dark-2) 100%);
+}
+
+.tech-grid {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 16px;
+}
+
+.tech-card {
+  background: rgba(31, 58, 95, 0.15);
+  border: 1px solid rgba(198, 166, 100, 0.1);
+  border-radius: 12px;
+  padding: 20px 16px;
+  text-align: center;
+  transition: var(--transition);
+  cursor: default;
+}
+
+.tech-card:hover {
+  border-color: rgba(198, 166, 100, 0.4);
+  background: rgba(31, 58, 95, 0.3);
+  transform: translateY(-4px);
+  box-shadow: 0 12px 30px rgba(0, 0, 0, 0.3);
+}
+
+.tech-icon-wrapper {
+  width: 48px;
+  height: 48px;
+  border-radius: 10px;
+  background: rgba(198, 166, 100, 0.08);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 0 auto 12px;
+  font-size: 1.4rem;
+  transition: var(--transition);
+}
+
+.tech-card:hover .tech-icon-wrapper {
+  background: rgba(198, 166, 100, 0.15);
+  transform: scale(1.1);
+}
+
+.tech-name {
+  font-family: var(--font-display);
+  font-size: 0.7rem;
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+  color: var(--beige);
+  line-height: 1.3;
+}
+
+/* =============================================
+   MARKETS SECTION
+   ============================================= */
+
+.markets-section {
+  background: var(--dark);
+}
+
+.markets-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 24px;
+}
+
+.market-card {
+  background: rgba(31, 58, 95, 0.15);
+  border: 1px solid rgba(198, 166, 100, 0.12);
+  border-radius: 20px;
+  padding: 40px 32px;
+  text-align: center;
+  transition: var(--transition);
+  position: relative;
+  overflow: hidden;
+}
+
+.market-card::after {
+  content: '';
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  height: 3px;
+  background: linear-gradient(90deg, transparent, var(--gold), transparent);
+  transform: scaleX(0);
+  transition: transform 0.5s ease;
+}
+
+.market-card:hover {
+  border-color: rgba(198, 166, 100, 0.4);
+  background: rgba(31, 58, 95, 0.3);
+  transform: translateY(-8px);
+  box-shadow: 0 24px 60px rgba(0, 0, 0, 0.4);
+}
+
+.market-card:hover::after {
+  transform: scaleX(1);
+}
+
+.market-emoji {
+  font-size: 3rem;
+  margin-bottom: 16px;
+  display: block;
+}
+
+.market-country {
+  font-family: var(--font-display);
+  font-size: 1rem;
+  letter-spacing: 0.2em;
+  text-transform: uppercase;
+  color: var(--warm-white);
+  margin-bottom: 10px;
+  font-weight: 600;
+}
+
+.market-regions {
+  font-family: var(--font-body);
+  font-size: 0.8rem;
+  color: var(--gold);
+  margin-bottom: 12px;
+  letter-spacing: 0.05em;
+}
+
+.market-desc {
+  font-family: var(--font-body);
+  font-size: 0.82rem;
+  color: var(--text-muted);
+  line-height: 1.5;
+  margin: 0;
+}
+
+/* =============================================
+   CLIENTS SECTION
+   ============================================= */
+
+.clients-section {
+  background: linear-gradient(180deg, var(--dark) 0%, var(--dark-2) 100%);
+}
+
+.clients-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 20px;
+}
+
+.client-card {
+  background: rgba(31, 58, 95, 0.15);
+  border: 1px solid rgba(198, 166, 100, 0.1);
+  border-radius: 16px;
+  padding: 28px 24px;
+  transition: var(--transition);
+  position: relative;
+}
+
+.client-card:hover {
+  border-color: rgba(198, 166, 100, 0.4);
+  background: rgba(31, 58, 95, 0.25);
+  transform: translateY(-5px);
+  box-shadow: 0 20px 50px rgba(0, 0, 0, 0.35);
+}
+
+.client-avatar {
+  width: 52px;
+  height: 52px;
+  border-radius: 12px;
+  background: linear-gradient(135deg, var(--navy), var(--navy-light));
+  border: 1px solid rgba(198, 166, 100, 0.2);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-family: var(--font-display);
+  font-size: 1.1rem;
+  font-weight: 700;
+  color: var(--gold);
+  margin-bottom: 16px;
+}
+
+.client-name {
+  font-family: var(--font-heading);
+  font-size: 1.2rem;
+  font-weight: 600;
+  color: var(--warm-white);
+  margin-bottom: 4px;
+}
+
+.client-role {
+  font-family: var(--font-body);
+  font-size: 0.78rem;
+  color: var(--gold);
+  letter-spacing: 0.05em;
+  margin-bottom: 4px;
+}
+
+.client-location {
+  font-family: var(--font-body);
+  font-size: 0.78rem;
+  color: var(--text-muted);
+  margin-bottom: 16px;
+  display: flex;
+  align-items: center;
+  gap: 6px;
+}
+
+.client-services {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 6px;
+}
+
+.service-tag {
+  font-family: var(--font-body);
+  font-size: 0.68rem;
+  letter-spacing: 0.05em;
+  color: var(--beige);
+  background: rgba(198, 166, 100, 0.08);
+  border: 1px solid rgba(198, 166, 100, 0.15);
+  border-radius: 100px;
+  padding: 3px 10px;
+}
+
+.client-badge {
+  position: absolute;
+  top: 16px;
+  right: 16px;
+  font-family: var(--font-display);
+  font-size: 0.6rem;
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+  color: var(--dark);
+  background: linear-gradient(135deg, var(--gold), var(--gold-dark));
+  border-radius: 100px;
+  padding: 3px 10px;
+}
+
+/* Responsive */
+@media (max-width: 991px) {
+  .services-grid { grid-template-columns: repeat(2, 1fr); }
+  .tech-grid { grid-template-columns: repeat(3, 1fr); }
+  .markets-grid { grid-template-columns: 1fr; }
+  .clients-grid { grid-template-columns: repeat(2, 1fr); }
+}
+
+@media (max-width: 576px) {
+  .services-grid { grid-template-columns: 1fr; }
+  .tech-grid { grid-template-columns: repeat(2, 1fr); }
+  .clients-grid { grid-template-columns: 1fr; }
+}
