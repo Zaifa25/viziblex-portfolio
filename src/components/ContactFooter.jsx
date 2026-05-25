@@ -118,8 +118,8 @@ export const Contact = () => {
 
   const contactInfo = [
     { icon: 'fa-globe', label: 'Website', value: 'viziblex.online.com', href: 'https://viziblex.online.com' },
-    { icon: 'fa-envelope', label: 'Email', value: 'muhammadhamzaali54688@gmail.com', href: 'mailto:muhammadhamzaali54688@gmail.com' },
-    { icon: 'fa-whatsapp fab', label: 'WhatsApp', value: '+92 318 5811479', href: 'https://wa.me/923185811479' },
+    { icon: 'fa-envelope', label: 'Email', value: 'muhammadhamzaali54688@gmail.com', href: 'mailto:mhamzaawan@gmail.com' },
+    { icon: 'fa-whatsapp fab', label: 'WhatsApp', value: '+92 318 5811479', href: 'https://wa.me/3265415612' },
   ];
 
   return (
