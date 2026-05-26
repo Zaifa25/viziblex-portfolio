@@ -302,13 +302,10 @@ export const Footer = () => {
                 <a href="mailto:muhammadhamzaali54688@gmail.com" className="social-icon">
                   <i className="fas fa-envelope"></i>
                 </a>
-                <a href="#contact" className="social-icon" onClick={(e) => { e.preventDefault(); handleNav('#contact'); }}>
+                <a href="https://www.linkedin.com/in/hamza-awan-428a60265" className="social-icon" target="_blank" rel="noreferrer">
                   <i className="fab fa-linkedin-in"></i>
                 </a>
-                <a href="#contact" className="social-icon" onClick={(e) => { e.preventDefault(); handleNav('#contact'); }}>
-                  <i className="fab fa-instagram"></i>
-                </a>
-                <a href="#contact" className="social-icon" onClick={(e) => { e.preventDefault(); handleNav('#contact'); }}>
+                <a href="https://www.facebook.com/profile.php?id=61590250200797" className="social-icon" target="_blank" rel="noreferrer">
                   <i className="fab fa-facebook-f"></i>
                 </a>
               </div>

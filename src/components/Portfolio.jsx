@@ -72,15 +72,7 @@ const Portfolio = () => {
           ))}
         </div>
 
-        {/* Note */}
-        <div className="row mt-4">
-          <div className="col-12 text-center">
-            <p style={{ fontFamily: 'var(--font-body)', fontSize: '0.8rem', color: 'var(--text-muted)', fontStyle: 'italic' }}>
-              <i className="fas fa-info-circle me-2" style={{ color: 'var(--gold)' }}></i>
-              Replace placeholders with actual portfolio images from your Viziblex portfolio PDF
-            </p>
-          </div>
-        </div>
+        
       </div>
     </section>
   );
