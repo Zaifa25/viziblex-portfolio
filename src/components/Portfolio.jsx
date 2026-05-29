@@ -1,9 +1,11 @@
 import React from 'react';
 import '../styles/Extras.css';
+import p1 from '../assets/images/1.jpeg';
 
 const portfolioItems = [
   {
     label: 'Just Sold Campaign',
+    img: p1,
     desc: 'Multiple Properties · South FL',
     icon: '🏡',
     bg: 'linear-gradient(135deg, #1a2f4a, #2d4a6e)',
@@ -58,12 +60,11 @@ const Portfolio = () => {
         <div className="portfolio-grid" data-aos="fade-up" data-aos-delay="100">
           {portfolioItems.map((item, i) => (
             <div key={i} className="portfolio-item">
-              <div className="portfolio-placeholder" style={{ background: item.bg }}>
-                <span style={{ fontSize: '3rem', opacity: 0.5 }}>{item.icon}</span>
-                <p style={{ fontFamily: 'var(--font-display)', fontSize: '0.65rem', letterSpacing: '0.15em', color: 'var(--beige)', textTransform: 'uppercase', textAlign: 'center', opacity: 0.6 }}>
-                  Social Media Creative
-                </p>
-              </div>
+              <img
+                src={item.img}
+                alt={item.label}
+                style={{ width: '100%', height: '100%', objectFit: 'cover', display: 'block' }}
+              />
               <div className="portfolio-overlay">
                 <div className="portfolio-label">{item.label}</div>
                 <div className="portfolio-desc">{item.desc}</div>
@@ -72,7 +73,7 @@ const Portfolio = () => {
           ))}
         </div>
 
-        
+
       </div>
     </section>
   );
